@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../assets/images/BG-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.softcom {
+  background-color: #fff;
+  width: 40rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1.5rem 1.5rem 10rem;
+  border-radius: 0 4rem 4rem 0;
+}
+
+.softcom img {
+  height: 4rem;
+}
+
+.helptools {
+  margin-left: 17rem;
+  margin-top: 3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: start;
+  margin-left: 12rem;
+  margin-top: 2rem;
+  width: 80rem;
+}
+
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 1.5rem;
+  width: 50rem;
+  max-width: 400px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: .75rem;
+  width: 100%;
+  color: #fff;
+}
+
+.inputGroup label {
+  pointer-events: none;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-80%);
+  margin: 0;
+  padding: 0.4em;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: #F3B51B;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  background-color: #F3B51B;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  height: 45px;
+  transition: 0.3s;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+/* Quando o input estiver em foco ou preenchido */
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  transform: translateY(-1.5em);
+  font-size: 0.85em;
+  color: #F3B51B;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #F3B51B;
+  box-shadow: 0 0 0 5px #d69e0c;
+  color: #fff;
+
+  & a {
+    color: #fff;
+  }
+}
